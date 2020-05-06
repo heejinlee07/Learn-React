@@ -20,8 +20,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "eslint --fix",
-      "pre-push": "eslint --fix"
+      "pre-commit": "eslint --fix src/**/*.js",
+      "pre-push": "eslint --fix src/**/*.js"
     }
   },
   "eslintConfig": {
