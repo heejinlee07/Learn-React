@@ -1,26 +1,48 @@
-import React from "react";
-import logo from "./logo.svg";
+/* eslint-disable */
+import React, { Component } from "react";
+// import classNames from "classnames/bind";
 import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+// const st = classNames.bind(style);
+
+class App extends Component {
+  handleClick = (e) => {
+    e.preventDefault();
+    console.log("로그인시도", this);
+  };
+  idInsert = (e) => {
+    e.preventDefault();
+    console.log("사용자 아이디 입력중", this);
+  };
+  pwInsert = (e) => {
+    e.preventDefault();
+    console.log("사용자 패스워드 입력중", this);
+  };
+  render() {
+    return (
+      <div className="blue">
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <strong>아이디</strong>
+          <input
+            type="text"
+            onChange={this.idInsert}
+            name="id"
+            value="아이디 입력"
+          />
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+        <p>
+          <strong>비밀번호</strong>
+          <input
+            type="password"
+            onChange={this.pwInsert}
+            name="password"
+            value="비밀번호 입력"
+          />
+        </p>
+        <input type="submit" onClick={this.handleClick}></input>
+      </div>
+    );
+  }
 }
 
 export default App;
