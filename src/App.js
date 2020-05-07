@@ -10,12 +10,10 @@ class App extends Component {
     e.preventDefault();
     console.log("로그인시도", this);
   };
-  idInsert = (e) => {
-    e.preventDefault();
+  idInsert = () => {
     console.log("사용자 아이디 입력중", this);
   };
-  pwInsert = (e) => {
-    e.preventDefault();
+  pwInsert = () => {
     console.log("사용자 패스워드 입력중", this);
   };
   render() {
