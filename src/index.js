@@ -6,7 +6,8 @@ import ReactDOM from "react-dom";
 // import Chapter3 from "./chapter_3/Parent";
 // import Chapter4 from "./chapter_4/God";
 // import Chapter5 from "./chapter_5/Book";
-import Chapter6 from "./chapter_6/Book";
+// import Chapter6 from "./chapter_6/Book";
+import UseMemo from "./useMemo/Parent";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -16,7 +17,8 @@ ReactDOM.render(
     {/* <Chapter3 /> */}
     {/* <Chapter4 /> */}
     {/* <Chapter5 /> */}
-    <Chapter6 />
+    {/* <Chapter6 /> */}
+    <UseMemo />
   </React.StrictMode>,
   document.getElementById("root"),
 );
